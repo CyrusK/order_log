@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-02-02 17:25:07
+  name: MyString
+  pickup: MyString
+  pickuptime: 2016-02-02 17:25:07
+
+two:
+  date: 2016-02-02 17:25:07
+  name: MyString
+  pickup: MyString
+  pickuptime: 2016-02-02 17:25:07
