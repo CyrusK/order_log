@@ -31,8 +31,9 @@ class OrdersController < ApplicationController
     private
 
         def order_params
+            params.require(:order).permit(:date, :name, :pickup, :pickuptime)
         end
 
-        def find_order
+        def find_orderx
         end
 end
