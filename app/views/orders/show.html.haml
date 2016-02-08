@@ -4,7 +4,10 @@
     %p= @order.pickup
     %p= @order.pickuptime
 
-    = link_to "Back |", root_path 
+    = link_to "Back", root_path 
+    |
     = link_to "Edit", edit_order_path(@order)
+    |
+    = link_to "Delete", order_path(@order), method: :delete, data: {confirm: "Are you sure you want to remove this order?"}
 
 
