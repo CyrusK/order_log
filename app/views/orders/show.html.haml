@@ -3,3 +3,8 @@
     %p= @order.name
     %p= @order.pickup
     %p= @order.pickuptime
+
+    = link_to "Back |", root_path 
+    = link_to "Edit", edit_order_path(@order)
+
+
