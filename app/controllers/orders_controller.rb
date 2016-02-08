@@ -1,5 +1,7 @@
 class OrdersController < ApplicationController
 
+        before_action :find_order, only: [:show, :edit, :update, :destroy]
+
         def index
         end
 
@@ -11,7 +13,7 @@ class OrdersController < ApplicationController
         end
 
         def create
-            @order = order.new(order_params)
+            @order = Order.new(order_params)
             if @order.save
                 redirect_to @order
             else
@@ -34,6 +36,7 @@ class OrdersController < ApplicationController
             params.require(:order).permit(:date, :name, :pickup, :pickuptime)
         end
 
-        def find_orderx
+        def find_order
+            @order = Order.find(params[:id])
         end
 end
