@@ -1,6 +1,5 @@
-%h1 Welcome to RoadRunner24!
+%h2 Welcome to RoadRunner24!
 
 - @orders.each do |order|
-    %h2= link_to order.date, order
-    %h3= order.name
-    
+    %h3= link_to order.date.strftime("%A %B %d, %Y"), order
+    %h4= order.name
