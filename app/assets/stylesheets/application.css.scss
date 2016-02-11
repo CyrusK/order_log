@@ -17,6 +17,26 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.navbar-default {
+
+navbar-default-link-hover-color: #c0392b;
+
+background: #ECE9E6; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(http://i.imgur.com/HxgCQn2.png?1);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #e74c3c;
+    text-shadow: black 0.1em 0.05em;
+}
+
 body {
     
 background: #DD5E89; /* fallback for old browsers */
