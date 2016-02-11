@@ -1,0 +1,9 @@
+=simple_form_for([@order, @order.deliveries.build]) do |f|
+    =f.input :name, label: "Recipient Name", input_html: { class: "form-control"}
+    =f.input :deliveryaddress, label: "What is the Delivery Address?", input_html: { class: "form-control"}
+    =f.input :deliverytime, label: "What time do you want it Delivered?",input_html: { class: "form-control"}
+    =f.input :notes, input_html: { class: "form-control"}
+    %br/
+    =f.button :submit, class: "btn btn-primary btn-lg"
+    <p>
+    <p>
