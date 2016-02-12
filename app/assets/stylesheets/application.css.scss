@@ -31,7 +31,10 @@ background:  #FFFFFF  /* fallback for old browsers */
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #e74c3c;
+    font-family: Shift, sans-serif;
+    font-size: 22px;
+    font-weight: 200px;
+    color: #3498db;
     text-shadow: black 0.1em 0.05em;
 }
 
@@ -41,4 +44,14 @@ background: #DD5E89; /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #DD5E89 , #F7BB97); /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #DD5E89 , #F7BB97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         
+}
+
+#index_orders {
+    h2 {
+        margin-bottom: 0;
+        font-weight: 100;
+            a {
+               color: white;
+            }
+        }
 }
