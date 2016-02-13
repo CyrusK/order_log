@@ -10,4 +10,6 @@
 #index_orders
   - @orders.each do |order|
     %h3= link_to order.date.strftime("%A %B %d, %Y"), order
-    %h4= order.name
+    %h4
+    Order:
+    =order.name
