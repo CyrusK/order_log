@@ -39,19 +39,21 @@ background:  #FFFFFF  /* fallback for old browsers */
 }
 
 body {
-    
-background: #DD5E89; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #DD5E89 , #F7BB97); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #DD5E89 , #F7BB97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+background: #2c3e50; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2c3e50 , #3498db); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2c3e50 , #3498db); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+           
         
 }
 
 #index_orders {
-    h2 {
+    h3 {
         margin-bottom: 0;
-        font-weight: 100;
+        font-weight: 200;
             a {
-               color: white;
+               color: #ecf0f1;
             }
         }
 }
