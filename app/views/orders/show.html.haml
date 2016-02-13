@@ -1,24 +1,23 @@
-#order
-    %h3 Order Pickup
-
-    %p= @order.date
-    %p= @order.name
-    %p= @order.pickup
-    %p= @order.pickuptime
+#show_order
+%h3 Order Pickup
+%p= @order.date
+%p= @order.name
+%p= @order.pickup
+%p= @order.pickuptime
 
 #deliveries
-    %h3 Delivery
+  %h3 Delivery
 
-    = render @order.deliveries
+  = render @order.deliveries
 
-    %h3 Add Delivery
+%h3 Add Delivery
 
-    = render "deliveries/form"
+= render "deliveries/form"
 
-    = link_to "Back", root_path 
-    |
-    = link_to "Edit", edit_order_path(@order)
-    |
-    = link_to "Delete", order_path(@order), method: :delete, data: {confirm: "Are you sure you want to remove this order?"}
+= link_to "Back" , root_path
+|
+= link_to "Edit", edit_order_path(@order)
+|
+= link_to "Delete", order_path(@order), method: :delete, data: {confirm: "Are you sure you want to remove this order?"}
 
 
