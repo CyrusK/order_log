@@ -1,9 +1,9 @@
 #show_order
 %h3 Order Pickup
-%p= @order.date
+%p= @order.date.strftime("Order Date: %A %B %d, %Y")
 %p= @order.name
 %p= @order.pickup
-%p= @order.pickuptime
+%p= @order.pickuptime.strftime("Pickup Time: %r %A %B %d, %Y")
 
 #deliveries
   %h3 Delivery
@@ -14,7 +14,7 @@
 
 = render "deliveries/form"
 
-= link_to "Back" , root_path
+= link_to "Back", root_path
 |
 = link_to "Edit", edit_order_path(@order)
 |

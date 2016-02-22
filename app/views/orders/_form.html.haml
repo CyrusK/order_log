@@ -1,5 +1,5 @@
 = simple_form_for(@order, html: {class: 'form-horizontal'}) do |f|
-    =f.input :date, label: "Date", input_html: {class: "form-control"}
+    =f.input :date, label: "Date", input_html: {class: DateTime.now.strftime("%B %C, %Y - %r")}
     =f.input :name, label: "Name", input_html: {class: "form-control"}
     =f.input :pickup, label: "Pick-up", input_html: {class: "form-control"}
     =f.input :pickuptime, label: "Pick-up Time", input_html: {class: "form-control"}
